@@ -21,7 +21,7 @@ bool primeNumber(int number){
     }
 }
 
-int main(){
+/*int main(){
     int number;
     std::cout << "What number: ";
     std::cin >> number;
@@ -30,4 +30,4 @@ int main(){
     std::cout << primeNumber(number);
 
     return 0;
-}
+}*/
