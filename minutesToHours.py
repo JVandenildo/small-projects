@@ -1,5 +1,4 @@
 # convert total minutes of a movie to its hour length
-
 def convertMinToHr(MinutesTotal):
     hour = MinutesTotal//60
     min = MinutesTotal%60
