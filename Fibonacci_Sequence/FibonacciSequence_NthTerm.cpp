@@ -2,7 +2,7 @@
 #include <vector>
 using namespace std;
 
-int main(){
+/*int main(){
     int nth_term, n1, n2;
     cout << "Last term: "; // all terms in the sequence are smaller than this one
     cin >> nth_term;
@@ -33,4 +33,4 @@ int main(){
     }
 
     return 0;
-}
+}*/
