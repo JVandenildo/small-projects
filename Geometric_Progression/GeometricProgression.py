@@ -1,5 +1,5 @@
 # have a sequence of n terms with geometric progression
-def ArithmeticProgression(n, term, constant):
+def GeometricProgression(n, term, constant):
     listTerms = [term]
 
     while len(listTerms) < n:
@@ -12,4 +12,4 @@ n = int(input("Number of terms: "))
 term = float(input("1st term: "))
 constant = float(input("Constant: "))
 
-print(ArithmeticProgression(n, term, constant))
+print(GeometricProgression(n, term, constant))
