@@ -6,7 +6,7 @@ double CircleArea(double radius){
     return M_PI * (radius * radius);
 }
 
-int main(){
+/*int main(){
     double r;
     cout << "Radius: ";
     cin >> r;
@@ -15,4 +15,4 @@ int main(){
     cout << CircleArea(r) << " squared units.\n";
 
     return 0;
-}
+}*/
