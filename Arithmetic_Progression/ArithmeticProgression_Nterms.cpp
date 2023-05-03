@@ -23,7 +23,7 @@ vector<double> ArithmeticProgression(int n, double term, double constant){
     cout << "Constant: ";
     cin >> constant;
 
-    for(double i: ArithmeticProgression(n, term, constant)){
+    for(auto i: ArithmeticProgression(n, term, constant)){
         cout << i << ", ";
     }
 
