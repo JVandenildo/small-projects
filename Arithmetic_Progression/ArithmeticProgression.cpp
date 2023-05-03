@@ -13,7 +13,7 @@ vector<double> ArithmeticProgression(int n, double term, double constant){
     return listTerms;
 }
 
-int main(){
+/*int main(){
     int n;
     cout << "Number of terms: ";
     cin >> n;
@@ -28,4 +28,4 @@ int main(){
     }
 
     return 0;
-}
+}*/

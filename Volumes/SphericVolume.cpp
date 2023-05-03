@@ -2,17 +2,17 @@
 #include <math.h>
 using namespace std;
 
-double CircleArea(double radius){
-    return M_PI * powf(radius, 2);
+double sphericVolume(double radius){
+    return (M_PI * powf(radius, 3) * 4)/3;
 }
 
-int main(){
+/*int main(){
     double r;
     cout << "Radius: ";
     cin >> r;
 
     cout.precision(5);
-    cout << CircleArea(r) << " squared units.\n";
+    cout << sphericVolume(r);
 
     return 0;
-}
+}*/

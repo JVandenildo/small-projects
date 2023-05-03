@@ -13,7 +13,7 @@ vector<double> GeometricProgression(int n, double term, double constant){
     return listTerms;
 }
 
-int main(){
+/*int main(){
     int n;
     cout << "Number of terms: ";
     cin >> n;
@@ -31,4 +31,4 @@ int main(){
     cout << " size of " << GeometricProgression(n, term, constant).size() << ".\n";
 
     return 0;
-}
+}*/
