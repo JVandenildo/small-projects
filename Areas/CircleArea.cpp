@@ -2,11 +2,13 @@
 #include <math.h>
 using namespace std;
 
-double CircleArea(double radius){
+double CircleArea(double radius)
+{
     return M_PI * powf(radius, 2);
 }
 
-int main(){
+int main()
+{
     double r;
     cout << "Radius: ";
     cin >> r;

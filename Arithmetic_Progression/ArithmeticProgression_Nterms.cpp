@@ -2,10 +2,12 @@
 #include <vector>
 using namespace std;
 
-vector<double> ArithmeticProgression(int n, double term, double constant){
+vector<double> ArithmeticProgression(int n, double term, double constant)
+{
     vector<double> listTerms = {term};
 
-    while(listTerms.size() < n){
+    while (listTerms.size() < n)
+    {
         term = term + constant;
         listTerms.push_back(term);
     }
@@ -13,7 +15,8 @@ vector<double> ArithmeticProgression(int n, double term, double constant){
     return listTerms;
 }
 
-/*int main(){
+int main()
+{
     int n;
     cout << "Number of terms: ";
     cin >> n;
@@ -23,9 +26,10 @@ vector<double> ArithmeticProgression(int n, double term, double constant){
     cout << "Constant: ";
     cin >> constant;
 
-    for(auto i: ArithmeticProgression(n, term, constant)){
+    for (auto i : ArithmeticProgression(n, term, constant))
+    {
         cout << i << ", ";
     }
 
     return 0;
-}*/
+}

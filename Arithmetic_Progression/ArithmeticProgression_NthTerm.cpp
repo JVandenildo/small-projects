@@ -2,29 +2,36 @@
 #include <vector>
 using namespace std;
 
-vector<double> ArithmeticProgression(double iTerm, double fTerm, double const constant){
+vector<double> ArithmeticProgression(double iTerm, double fTerm, double const constant)
+{
     vector<double> listTerms;
 
-    if(constant < 0 && iTerm > fTerm){
-        while(iTerm >= fTerm){
+    if (constant < 0 && iTerm > fTerm)
+    {
+        while (iTerm >= fTerm)
+        {
             listTerms.push_back(iTerm);
             iTerm = iTerm + constant;
         }
     }
-    else if(constant > 0 && iTerm < fTerm){
-        while(iTerm <= fTerm){
+    else if (constant > 0 && iTerm < fTerm)
+    {
+        while (iTerm <= fTerm)
+        {
             listTerms.push_back(iTerm);
             iTerm = iTerm + constant;
         }
     }
-    else{
+    else
+    {
         return listTerms;
     }
 
     return listTerms;
 }
 
-int main(){
+int main()
+{
     double initialTerm, finalTerm, constant;
     cout << "First term: ";
     cin >> initialTerm;
@@ -33,7 +40,8 @@ int main(){
     cout << "Constant: ";
     cin >> constant;
 
-    for(auto i: ArithmeticProgression(initialTerm, finalTerm, constant)){
+    for (auto i : ArithmeticProgression(initialTerm, finalTerm, constant))
+    {
         cout << i << ", ";
     }
     cout << "total of " << ArithmeticProgression(initialTerm, finalTerm, constant).size() << " terms.\n";

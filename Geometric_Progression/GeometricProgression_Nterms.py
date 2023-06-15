@@ -8,6 +8,7 @@ def GeometricProgression(n, term, constant):
 
     return round(listTerms, 2)
 
+
 n = int(input("Number of terms: "))
 term = float(input("1st term: "))
 constant = float(input("Constant: "))

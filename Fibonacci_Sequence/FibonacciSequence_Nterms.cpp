@@ -2,7 +2,8 @@
 #include <vector>
 using namespace std;
 
-/*int main(){
+/*int main()
+{
     int n_terms, n1, n2;
     cout << "How many terms: ";
     cin >> n_terms;
@@ -13,11 +14,14 @@ using namespace std;
 
     vector<int> secFib = {n1, n2};
 
-    if(n_terms <= 0 || n_terms < 2){
+    if (n_terms <= 0 || n_terms < 2)
+    {
         cout << "Only numbers above zero and sequence bigger than 2 terms!";
     }
-    else{
-        while(secFib.size() < n_terms){
+    else
+    {
+        while (secFib.size() < n_terms)
+        {
             int nth = n1 + n2;
             secFib.push_back(nth);
 
@@ -26,7 +30,7 @@ using namespace std;
         }
     }
 
-    for (auto i: secFib)
+    for (auto i : secFib)
     {
         cout << i << ", ";
     }

@@ -2,11 +2,13 @@
 #include <math.h>
 using namespace std;
 
-double sphericVolume(double radius){
-    return (M_PI * powf(radius, 3) * 4)/3;
+double sphericVolume(double radius)
+{
+    return (M_PI * powf(radius, 3) * 4) / 3;
 }
 
-/*int main(){
+/*int main()
+{
     double r;
     cout << "Radius: ";
     cin >> r;

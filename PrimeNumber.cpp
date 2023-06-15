@@ -1,33 +1,40 @@
 #include <iostream>
 #include <vector>
+using namespace std;
 
-bool primeNumber(int number){
+bool primeNumber(int number)
+{
     int numberHalf = number / 2;
     int divisor = 1;
-    std::vector<int> divisorList;
+    vector<int> divisorList;
 
-    while(divisor <= numberHalf){
-        if(number % divisor == 0){
+    while (divisor <= numberHalf)
+    {
+        if (number % divisor == 0)
+        {
             divisorList.push_back(divisor);
         }
         divisor = divisor + 1;
     }
 
-    if(divisorList.size() == 1){
+    if (divisorList.size() == 1)
+    {
         return true;
     }
-    else{
+    else
+    {
         return false;
     }
 }
 
-/*int main(){
+/*int main()
+{
     int number;
-    std::cout << "What number: ";
-    std::cin >> number;
+    cout << "What number: ";
+    cin >> number;
 
     // 1 is for true, 0 for false
-    std::cout << primeNumber(number);
+    cout << primeNumber(number);
 
     return 0;
 }*/

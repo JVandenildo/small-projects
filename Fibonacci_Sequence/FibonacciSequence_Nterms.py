@@ -12,4 +12,4 @@ else:
         n1 = n2
         n2 = nth
 
-    print(f'Your fibonacci sequence is: {secFib}. With {len(secFib)} terms.')
+    print(f"Your fibonacci sequence is: {secFib}. With {len(secFib)} terms.")

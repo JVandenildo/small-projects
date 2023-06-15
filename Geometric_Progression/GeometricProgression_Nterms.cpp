@@ -2,10 +2,12 @@
 #include <vector>
 using namespace std;
 
-vector<double> GeometricProgression(int n, double term, double constant){
+vector<double> GeometricProgression(int n, double term, double constant)
+{
     vector<double> listTerms;
 
-    while(listTerms.size() < n){
+    while (listTerms.size() < n)
+    {
         term = term * constant;
         listTerms.push_back(term);
     }
@@ -13,7 +15,8 @@ vector<double> GeometricProgression(int n, double term, double constant){
     return listTerms;
 }
 
-/*int main(){
+/*int main()
+{
     int n;
     cout << "Number of terms: ";
     cin >> n;
@@ -25,7 +28,8 @@ vector<double> GeometricProgression(int n, double term, double constant){
     cin >> constant;
 
     cout.precision(5);
-    for(auto i: GeometricProgression(n, term, constant)){
+    for (auto i : GeometricProgression(n, term, constant))
+    {
         cout << i << ", ";
     }
     cout << " size of " << GeometricProgression(n, term, constant).size() << ".\n";

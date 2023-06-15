@@ -14,8 +14,14 @@ def ArithmeticProgression(iTerm, fTerm, constant):
 
     return listTerms
 
+
 initialTerm = float(input("Fist term: "))
-finalTerm = float(input("Last term: ")) # depending on the constant may not be the last term
+finalTerm = float(
+    input("Last term: ")
+)  # depending on the constant may not be the last term
 constant = float(input("Constant: "))
 
-print(ArithmeticProgression(initialTerm, finalTerm, constant), f'Size of {len(ArithmeticProgression(initialTerm, finalTerm, constant))} terms.')
+print(
+    ArithmeticProgression(initialTerm, finalTerm, constant),
+    f"Size of {len(ArithmeticProgression(initialTerm, finalTerm, constant))} terms.",
+)

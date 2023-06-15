@@ -8,6 +8,7 @@ def ArithmeticProgression(n, term, constant):
 
     return listTerms
 
+
 n = int(input("Number of terms: "))
 term = float(input("1st term: "))
 constant = float(input("Constant: "))

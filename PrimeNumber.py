@@ -1,5 +1,5 @@
 def primeNumber(number):
-    numberHalf = number/2
+    numberHalf = number / 2
     divisor = 1
     divisorList = []
 
@@ -12,6 +12,7 @@ def primeNumber(number):
         return True
     else:
         return False
+
 
 number = int(input("What number: "))
 
