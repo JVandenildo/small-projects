@@ -2,19 +2,10 @@
 #include <math.h>
 using namespace std;
 
-class Circle
+double CircleArea(double radius)
 {
-public:
-    Circle(double radius)
-    {
-        double Radius = radius;
-    }
-
-    double Area(double radius)
-    {
-        return M_PI * powf(radius, 2);
-    }
-};
+    return M_PI * powf(radius, 2);
+}
 
 int main()
 {
@@ -22,10 +13,8 @@ int main()
     cout << "Radius: ";
     cin >> r;
 
-    Circle circle1(r);
-
     cout.precision(5);
-    cout << circle1.Area(r) << " squared units.\n";
+    cout << CircleArea(r) << " squared units.\n";
 
     return 0;
 }

@@ -1,6 +1,6 @@
 # About
 
-This project has small programs with random ideas. Just seeing if they work.  
+This project has small programs with random ideas (from the wild world web or some personal stuff). Just seeing if they work.  
 Some random ideas for later:
 
 - Binary convert;
