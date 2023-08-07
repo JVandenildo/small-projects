@@ -1,10 +1,12 @@
 const button = document.querySelector("#button");
-const card = document.querySelector(".card");
-
 button.addEventListener("click", test);
 
 function test() {
-	card.innerHTML = `Tested!`;
+	if (button.innerHTML === "Tested!") {
+		button.innerHTML = `Rotate!`;
+	} else {
+		button.innerHTML = `Tested!`;
+	}
 
 	return true;
 }

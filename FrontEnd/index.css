@@ -61,6 +61,22 @@ button:hover {
 	height: fit-content;
 }
 
+.player {
+	display: flex;
+	width: fit-content;
+	height: 2rem;
+	background-color: beige;
+	border-radius: 2rem;
+	padding: 5px;
+}
+.player button {
+	background-color: green;
+	border: 0;
+	margin-right: 5px;
+	display: flex;
+	align-items: center;
+}
+
 footer {
 	background-color: #1e1e1e;
 	padding: 10px;
