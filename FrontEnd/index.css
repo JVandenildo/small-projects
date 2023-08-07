@@ -70,11 +70,14 @@ button:hover {
 	padding: 5px;
 }
 .player button {
-	background-color: green;
+	background-color: rgb(118, 157, 41);
 	border: 0;
 	margin-right: 5px;
 	display: flex;
 	align-items: center;
+}
+.player img {
+	transition: all 2s ease-in-out;
 }
 
 footer {
