@@ -1,4 +1,4 @@
-import circle from "../public/images/circle.png";
+// rotate certain element(s) while some audio is playing
 
 export default function PlayIt() {
 	return (

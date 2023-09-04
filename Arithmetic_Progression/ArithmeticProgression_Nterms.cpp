@@ -15,21 +15,22 @@ vector<double> ArithmeticProgression(int n, double term, double constant)
     return listTerms;
 }
 
-int main()
-{
-    int n;
-    cout << "Number of terms: ";
-    cin >> n;
-    double term, constant;
-    cout << "1st term: ";
-    cin >> term;
-    cout << "Constant: ";
-    cin >> constant;
+// int main()
+// {
+//     int n;
+//     cout << "Number of terms: ";
+//     cin >> n;
 
-    for (auto i : ArithmeticProgression(n, term, constant))
-    {
-        cout << i << ", ";
-    }
+//     double term, constant;
+//     cout << "1st term: ";
+//     cin >> term;
+//     cout << "Constant: ";
+//     cin >> constant;
 
-    return 0;
-}
+//     for (auto i : ArithmeticProgression(n, term, constant))
+//     {
+//         cout << i << ", ";
+//     }
+
+//     return 0;
+// }
