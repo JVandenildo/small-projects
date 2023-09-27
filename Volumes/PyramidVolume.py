@@ -9,7 +9,7 @@ def PyramidVolume(height, baseSide, baseForm):
         return round((height * (pi * (pow(baseSide, 2)))) / 3, 2)
 
     else:
-        return False
+        return 0
 
 
 baseForm = str(input("circle or square? "))
