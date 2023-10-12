@@ -1,10 +1,9 @@
 #include <iostream>
 #include <vector>
-using namespace std;
 
-vector<double> GeometricProgression(double iTerm, double fTerm, double const constant)
+std::vector<double> GeometricProgression(double iTerm, double fTerm, double const constant)
 {
-    vector<double> listTerms;
+    std::vector<double> listTerms;
 
     if (constant < 1 && iTerm > fTerm)
     {
@@ -33,19 +32,19 @@ vector<double> GeometricProgression(double iTerm, double fTerm, double const con
 /*int main()
 {
     double initialTerm, finalTerm, constant;
-    cout << "First term: ";
-    cin >> initialTerm;
-    cout << "Last term: "; // depending on the constant may not be the last
-    cin >> finalTerm;
-    cout << "Constant: ";
-    cin >> constant;
+    std::cout << "First term: ";
+    std::cin >> initialTerm;
+    std::cout << "Last term: "; // depending on the constant may not be the last
+    std::cin >> finalTerm;
+    std::cout << "Constant: ";
+    std::cin >> constant;
 
-    cout.precision(5);
+    std::cout.precision(5);
     for (auto i : GeometricProgression(initialTerm, finalTerm, constant))
     {
-        cout << i << ", ";
+        std::cout << i << ", ";
     }
-    cout << "total of " << GeometricProgression(initialTerm, finalTerm, constant).size() << " terms.\n";
+    std::cout << "total of " << GeometricProgression(initialTerm, finalTerm, constant).size() << " terms.\n";
 
     return 0;
 }*/

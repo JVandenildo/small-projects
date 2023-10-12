@@ -1,6 +1,5 @@
 #include <iostream>
 #include <math.h>
-using namespace std;
 
 double sphericVolume(double radius)
 {
@@ -10,11 +9,11 @@ double sphericVolume(double radius)
 /*int main()
 {
     double r;
-    cout << "Radius: ";
-    cin >> r;
+    std::cout << "Radius: ";
+    std::cin >> r;
 
-    cout.precision(5);
-    cout << sphericVolume(r);
+    std::cout.precision(5);
+    std::cout << sphericVolume(r);
 
     return 0;
 }*/

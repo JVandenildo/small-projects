@@ -1,22 +1,21 @@
 #include <iostream>
 #include <vector>
-using namespace std;
 
-/*int main()
+int main()
 {
     int n_terms, n1, n2;
-    cout << "How many terms: ";
-    cin >> n_terms;
-    cout << "First term: ";
-    cin >> n1;
-    cout << "Second term: ";
-    cin >> n2;
+    std::cout << "How many terms: ";
+    std::cin >> n_terms;
+    std::cout << "First term: ";
+    std::cin >> n1;
+    std::cout << "Second term: ";
+    std::cin >> n2;
 
-    vector<int> secFib = {n1, n2};
+    std::vector<int> secFib = {n1, n2};
 
     if (n_terms <= 0 || n_terms < 2)
     {
-        cout << "Only numbers above zero and sequence bigger than 2 terms!";
+        std::cout << "Only numbers above zero and sequence bigger than 2 terms!";
     }
     else
     {
@@ -32,9 +31,9 @@ using namespace std;
 
     for (auto i : secFib)
     {
-        cout << i << ", ";
+        std::cout << i << ", ";
     }
-    cout << "it has " << secFib.size() << " terms.\n";
+    std::cout << "it has " << secFib.size() << " terms.\n";
 
     return 0;
-}*/
+}

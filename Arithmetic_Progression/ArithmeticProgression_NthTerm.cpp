@@ -1,10 +1,9 @@
 #include <iostream>
 #include <vector>
-using namespace std;
 
-vector<double> ArithmeticProgression(double iTerm, double fTerm, double const constant)
+std::vector<double> ArithmeticProgression(double iTerm, double fTerm, double const constant)
 {
-    vector<double> listTerms;
+    std::vector<double> listTerms;
 
     if (constant < 0 && iTerm > fTerm)
     {
@@ -30,21 +29,21 @@ vector<double> ArithmeticProgression(double iTerm, double fTerm, double const co
     return listTerms;
 }
 
-// int main()
-// {
-//     double initialTerm, finalTerm, constant;
-//     cout << "First term: ";
-//     cin >> initialTerm;
-//     cout << "Last term: "; // depending on the constant may not be the last
-//     cin >> finalTerm;
-//     cout << "Constant: ";
-//     cin >> constant;
+/*int main()
+{
+    double initialTerm, finalTerm, constant;
+    std::cout << "First term: ";
+    std::cin >> initialTerm;
+    std::cout << "Last term: "; // depending on the constant may not be the last
+    std::cin >> finalTerm;
+    std::cout << "Constant: ";
+    std::cin >> constant;
 
-//     for (auto i : ArithmeticProgression(initialTerm, finalTerm, constant))
-//     {
-//         cout << i << ", ";
-//     }
-//     cout << "total of " << ArithmeticProgression(initialTerm, finalTerm, constant).size() << " terms.\n";
+    for (auto i : ArithmeticProgression(initialTerm, finalTerm, constant))
+    {
+        std::cout << i << ", ";
+    }
+    std::cout << "total of " << ArithmeticProgression(initialTerm, finalTerm, constant).size() << " terms.\n";
 
-//     return 0;
-// }
+    return 0;
+}*/

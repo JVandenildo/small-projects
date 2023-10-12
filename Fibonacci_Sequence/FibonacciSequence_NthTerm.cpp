@@ -1,22 +1,21 @@
 #include <iostream>
 #include <vector>
-using namespace std;
 
 /*int main()
 {
     int nth_term, n1, n2;
-    cout << "Last term: "; // all terms in the sequence are smaller than this one
-    cin >> nth_term;
-    cout << "First term: ";
-    cin >> n1;
-    cout << "Second term: ";
-    cin >> n2;
+    std::cout << "Last term: "; // all terms in the sequence are smaller than this one
+    std::cin >> nth_term;
+    std::cout << "First term: ";
+    std::cin >> n1;
+    std::cout << "Second term: ";
+    std::cin >> n2;
 
-    vector<int> secFib = {n1, n2}; // sequence begins here
+    std::vector<int> secFib = {n1, n2}; // sequence begins here
 
     if (nth_term <= 0)
     {
-        cout << "Only number above zero!";
+        std::cout << "Only number above zero!";
     }
     else
     {
@@ -31,9 +30,9 @@ using namespace std;
 
         for (auto i : secFib)
         {
-            cout << i << ", ";
+            std::cout << i << ", ";
         }
-        cout << "it has " << secFib.size() << " terms.\n";
+        std::cout << "it has " << secFib.size() << " terms.\n";
     }
 
     return 0;
