@@ -1,12 +1,11 @@
 #include <iostream>
 #include <vector>
-using namespace std;
 
 bool primeNumber(int number)
 {
     int numberHalf = number / 2;
     int divisor = 1;
-    vector<int> divisorList;
+    std::vector<int> divisorList;
 
     while (divisor <= numberHalf)
     {
@@ -30,11 +29,11 @@ bool primeNumber(int number)
 /*int main()
 {
     int number;
-    cout << "What number: ";
-    cin >> number;
+    std::cout << "What number: ";
+    std::cin >> number;
 
     // 1 is for true, 0 for false
-    cout << primeNumber(number);
+    std::cout << primeNumber(number);
 
     return 0;
 }*/
