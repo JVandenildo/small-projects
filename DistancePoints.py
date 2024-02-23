@@ -3,12 +3,12 @@ import numpy as np
 
 def DistancePoints():
     # coordinates for the 1st point
-    x1 = int(input("X1: "))
-    y1 = int(input("Y1: "))
+    x1 = float(input("X1: "))
+    y1 = float(input("Y1: "))
 
     # coordinates for the 2nd point
-    x2 = int(input("X1: "))
-    y2 = int(input("Y1: "))
+    x2 = float(input("X2: "))
+    y2 = float(input("Y2: "))
 
     # distance between points on each axis
     x = abs(x1 - x2)
