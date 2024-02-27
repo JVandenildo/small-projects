@@ -1,7 +1,10 @@
-def cubicVolume(size):
-    return round(pow(size, 3), 2)
+class cube:
+    def __init__(self, faceArea: float):
+        self.faceArea = faceArea
+
+    def selfVolume(self):
+        return round(pow(self.faceArea, 3), 2)
 
 
-faceLength = float(input("Face length: "))
-
-print(f"{cubicVolume(faceLength)} cubic units.")
+NeoCube = cube(float(input("Area's face: ")))
+print(NeoCube.selfVolume())

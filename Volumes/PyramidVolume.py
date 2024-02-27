@@ -1,19 +1,27 @@
 from numpy import pi
 
 
-def PyramidVolume(height, baseSide, baseForm):
-    if baseForm == "square":
-        return round((height * (pow(baseSide, 2))) / 3, 2)
+class pyramid:
+    def __init__(self, height: float, baseSide: float, baseForm: str):
+        self.height = height
+        self.baseSide = baseSide
+        self.baseForm = baseForm
 
-    elif baseForm == "circle":
-        return round((height * (pi * (pow(baseSide, 2)))) / 3, 2)
+    def volume(self):
+        if self.baseForm == "square":
+            return round((self.height * (pow(self.baseSide, 2))) / 3, 2)
 
-    else:
-        return 0
+        elif self.baseForm == "circle":
+            return round((self.height * (pi * (pow(self.baseSide, 2)))) / 3, 2)
+
+        else:
+            return 0
 
 
-baseForm = str(input("circle or square? "))
-baseSide = float(input("Base side: "))
-height = float(input("Height: "))
+NeoPyramid = pyramid(
+    float(input("Height: ")),
+    float(input("Base side: ")),
+    str(input("circle or square? ")),
+)
 
-print(PyramidVolume(height, baseSide, baseForm))
+print(NeoPyramid.volume())
