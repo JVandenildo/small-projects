@@ -4,9 +4,9 @@ def GeometricProgression(n, term, constant):
 
     while len(listTerms) < n:
         term = term * constant
-        listTerms.append(term)
+        listTerms.append(round(term, 3))
 
-    return round(listTerms, 2)
+    return listTerms
 
 
 n = int(input("Number of terms: "))
