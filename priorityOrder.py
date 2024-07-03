@@ -6,11 +6,11 @@ def priorityOrder(array: list[int], number: int) -> int:
     Returns how big is the number within the list.
 
     Args:
-        array: is the list the function will examine.
-        number: the number that will compare to the other numbers within the list.
+        array: the list to be examined.
+        number: value that will compare to the other values within the list.
 
     Returns:
-        An int representing of hoe big is the number. 1 for the biggest, 2 for the 2nd biggest, so forth.
+        An int representing of how big is the input value. 1 for the biggest, 2 for the 2nd biggest, so forth.
     """
 
     copiedArray = array.copy()
