@@ -1,4 +1,4 @@
-def primeNumber(number):
+def primeNumber(number: int) -> bool:
     numberHalf = number / 2
     divisor = 1
     divisorList = []

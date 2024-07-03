@@ -1,7 +1,7 @@
 import numpy as np
 
 
-def DistancePoints():
+def DistancePoints() -> float:
     # coordinates for the 1st point
     x1 = float(input("X1: "))
     y1 = float(input("Y1: "))
