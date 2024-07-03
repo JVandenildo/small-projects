@@ -14,7 +14,7 @@ def priorityOrder(array: list[int], number: int) -> int:
     """
 
     copiedArray = array.copy()
-    count = 1
+    count = 1  # to begin with, it is considered the highest value among the array
 
     while len(copiedArray) > 1 and max(copiedArray) != number:
         copiedArray.remove(max(copiedArray))
