@@ -10,7 +10,7 @@ def priorityOrder(array: list[int], number: int) -> int:
         number: value that will compare to the other values within the list.
 
     Returns:
-        An int representing of how big is the input value. 1 for the biggest, 2 for the 2nd biggest, so forth.
+        An number representing the position. 1 for the biggest, 2 for the 2nd biggest, so forth.
     """
 
     copiedArray = array.copy()
@@ -25,7 +25,7 @@ def priorityOrder(array: list[int], number: int) -> int:
 
 # just for testing
 lst = [rd.randint(1, 100) for i in range(rd.randint(5, 10))]
-lst.append(50)  # a number I know it will be there
+lst.append(50)  # adding a number I know it will be there
 print(f"List: {lst}\n{priorityOrder(lst, 50)}")
 lst.sort()
 print(lst)
