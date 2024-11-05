@@ -15,7 +15,7 @@ else:
         n1 = n2
         n2 = nth
         nth = n1 + n2
-    print(f"Your Fibonacci sequence is: {secFib}. With {len(secFib)} terms.")
+    print(f"Your Fibonacci sequence, with {len(secFib)} terms, is: {secFib}.")
 
 pd.Series(secFib).plot(lw=1, title="Fibonacci Sequence")
 plt.show()
