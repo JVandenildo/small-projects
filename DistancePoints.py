@@ -11,8 +11,8 @@ def DistancePoints() -> float:
     y2 = float(input("Y2: "))
 
     # distance between points on each axis
-    x = abs(x1 - x2)
-    y = abs(y1 - y2)
+    x: float = abs(x1 - x2)
+    y: float = abs(y1 - y2)
 
     # distance itself
     distance = np.sqrt((x**2) + (y**2))

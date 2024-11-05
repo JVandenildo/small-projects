@@ -13,7 +13,7 @@ def orderPriority(array: list[int], number: int) -> int:
         Value from that position. 1 for the biggest, 2 for the 2nd biggest, so forth.
     """
 
-    copiedArray = array.copy()
+    copiedArray: list[int] = array.copy()
     count = number
 
     while len(copiedArray) != number:

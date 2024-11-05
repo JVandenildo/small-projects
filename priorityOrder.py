@@ -13,7 +13,7 @@ def priorityOrder(array: list[int], number: int) -> int:
         An number representing the position. 1 for the biggest, 2 for the 2nd biggest, so forth.
     """
 
-    copiedArray = array.copy()
+    copiedArray: list[int] = array.copy()
     count = 1  # to begin with, it is considered the highest value among the array
 
     while len(copiedArray) > 1 and max(copiedArray) != number:
