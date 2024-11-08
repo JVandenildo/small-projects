@@ -15,7 +15,7 @@ def DistancePoints() -> float:
     y: float = abs(y1 - y2)
 
     # distance itself
-    distance = np.sqrt((x**2) + (y**2))
+    distance: float = np.sqrt((x**2) + (y**2))
 
     return round(distance, 2)
 
