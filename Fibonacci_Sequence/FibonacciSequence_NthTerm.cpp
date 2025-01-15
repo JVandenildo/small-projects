@@ -3,30 +3,30 @@
 
 int main()
 {
-    int n_terms, n1, n2;
-    std::cout << "How many terms: ";
-    std::cin >> n_terms;
+    int nth_term, n1, n2;
+    std::cout << "Last term: ";
+    std::cin >> nth_term;
     std::cout << "First term: ";
     std::cin >> n1;
     std::cout << "Second term: ";
     std::cin >> n2;
     std::vector<int> secFib = {n1, n2};
 
-    if (n_terms < 2)
+    if (nth_term <= 0)
     {
-        std::cout << "Only numbers above zero and sequence bigger than two terms!" << std::endl;
+        std::cout << "Only numbers above zero!";
     }
     else
     {
-        while (secFib.size() < n_terms)
+        int nth = n1 + n2;
+        while (nth <= nth_term)
         {
-            int nth = n1 + n2;
             secFib.push_back(nth);
             n1 = n2;
             n2 = nth;
+            nth = n1 + n2;
         }
     }
-
     std::cout << "Your Fibonacci sequence, with " << secFib.size() << " terms, is ";
     for (size_t i = 0; i < secFib.size(); i++)
     {
